@@ -24,3 +24,9 @@
   /* tamanho da fonte padrão: 16px - 100% - 1rem */
   font-size: 60%; /* controle das medidas rem */
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
