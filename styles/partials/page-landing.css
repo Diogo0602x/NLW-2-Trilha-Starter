@@ -127,4 +127,10 @@
       height: 350px;
   }
 
+  .buttons-container {
+    grid-area: button;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
 }
