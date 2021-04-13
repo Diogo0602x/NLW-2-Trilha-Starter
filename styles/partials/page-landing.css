@@ -128,9 +128,14 @@
   }
 
   .buttons-container {
-    grid-area: button;
-    justify-content: flex-start;
-    margin: 0;
+      grid-area: button;
+      justify-content: flex-start;
+      margin: 0;
   }
 
+  .total-connections {
+      grid-area: texting;
+      justify-self: end;
+      font-size: 1.2rem;
+  }
 }
