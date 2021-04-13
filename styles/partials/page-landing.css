@@ -9,3 +9,19 @@
 #page-landing #container {
   color: var(--color-text-in-primary);
 }
+
+.logo-container img {
+  height: 10rem;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.logo-container h2 {
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  margin-top: 0.8rem;
+}
