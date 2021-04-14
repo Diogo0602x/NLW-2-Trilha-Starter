@@ -243,4 +243,19 @@
     padding: 32px;
   }
 
+  
+  #search-teachers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    position: absolute;
+    bottom: -28px;
+  }
+
+  #page-study main {
+    padding: 32px 0;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
 }
