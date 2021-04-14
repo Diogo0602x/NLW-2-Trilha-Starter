@@ -112,3 +112,8 @@
   left: 1.6rem;
   bottom: 0;
 }
+
+#page-study main {
+  margin: 3.2rem auto;
+  width: 90%;
+}
