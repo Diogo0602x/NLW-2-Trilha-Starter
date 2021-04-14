@@ -262,4 +262,23 @@
     margin-bottom: 0;
   }
 
+  .teacher-item >  p {
+    padding: 0 32px;
+  }
+
+  .teacher-item footer p strong {
+    display: initial;
+    margin-left: 16px;
+  }
+
+  .teacher-item footer .button {
+    width: 245px;
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  .teacher-item footer button img {
+    margin-right: 16px;
+  }
+
 }
