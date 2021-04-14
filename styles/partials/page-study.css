@@ -117,3 +117,38 @@
   margin: 3.2rem auto;
   width: 90%;
 }
+
+.teacher-item {
+  background-color: var(--color-box-base);
+  border: 1px solid var(--coclor-line-in-white);
+  border-radius: .8rem;
+  margin-top: 2.4rem;
+}
+
+.teacher-item header {
+  padding: 3.2rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.teacher-item header img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.teacher-item header div {
+  margin-left: 2.4rem;
+}
+
+.teacher-item header div strong {
+  font: 700 2.4rem Archivo;
+  display: block;
+  color: var(--color-text-title);
+}
+
+.teacher-item header div span {
+  font-size: 1.6rem;
+  display: block;
+  margin-top: .4rem;
+}
