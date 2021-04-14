@@ -258,4 +258,8 @@
     margin: 0 auto;
   }
 
+  #seacrh-teacher .select-block {
+    margin-bottom: 0;
+  }
+
 }
