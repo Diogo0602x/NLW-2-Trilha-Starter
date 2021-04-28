@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Diogo0602x/NLW-2-Trilha-Starter/issues"
   },
-  "homepage": "https://github.com/Diogo0602x/NLW-2-Trilha-Starter#readme"
+  "homepage": "https://github.com/Diogo0602x/NLW-2-Trilha-Starter#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
