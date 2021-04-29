@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="/styles/partials/forms.css">
     <link rel="stylesheet" href="/styles/partials/page-give-classes.css">
 
+
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
 
     <script src="/scripts/addField.js" defer></script>
 </head>
@@ -31,8 +33,8 @@
            </div>
         </header>
 
-       <main>
-            <form action="" id="create-class">
+        <main>
+            <form action="/save-classes" id="create-class" method="POST">
                 <fieldset>
                     <legend>Seus dados</legend>
 
@@ -64,16 +66,11 @@
                         <label for="subject"> Matéria</label>
                         <select name="subject" id="subject" required>
                             <option value="">Selecione uma opção</option>
-                            <option value="1">Artes</option>
-                            <option value="2">Biologia</option>
-                            <option value="3">Ciências</option>
-                            <option value="4">Educação física</option>
-                            <option value="5">Física</option>
-                            <option value="6">Geografia</option>
-                            <option value="7">História</option>
-                            <option value="8">Matemática</option>
-                            <option value="9">Português</option>
-                            <option value="10">Química</option>
+                            {%for subject in subjects %}
+                                <option value="{{loop.index}}">
+                                    {{subject}}
+                                </option>
+                            {%endfor%}
                         </select>
                     </div>
 
@@ -84,6 +81,7 @@
                         <input name="cost" type="cost" id="cost" type="number" required>
                     </div>
                 </fieldset>
+
 
                 <fieldset id="schedule-items">
                     <legend>Horários disponíveis
@@ -96,13 +94,11 @@
                             <label for="weekday">Dia da semana</label>
                             <select name="weekday[]" required>
                                 <option value="">Selecione uma opção</option>
-                                <option value="2">Domingo</option>
-                                <option value="3">Segunda-feira</option>
-                                <option value="4">Terça-feira</option>
-                                <option value="5">Quarta-feira</option>
-                                <option value="6">Quinta-feira</option>
-                                <option value="7">Sexta-feira</option>
-                                <option value="8">Sábado</option>
+                                {%for weekday in weekdays %}
+                                    <option value="{{loop.index0}}">
+                                        {{weekday}}
+                                    </option>
+                                {%endfor%}
                             </select>
                         </div>
 
@@ -115,11 +111,12 @@
                             <label for="time_to">Até</label>
                             <input type="time" name="time_to[]" required>
                         </div>
-                    </div> 
-                                        
+                    </div>
+
+                    
                 </fieldset>
             </form>
-            
+
             <footer>
                 <p>
                     <img src="/images/icons/warning.svg" alt="Aviso importante">
@@ -127,8 +124,9 @@
                 </p>
                 <button type="submit" form="create-class">Salvar cadastro</button>
             </footer>
-       </main>
+        </main>
     </div>
 
+    
 </body>
 </html>
