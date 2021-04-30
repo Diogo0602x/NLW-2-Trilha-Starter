@@ -10,6 +10,13 @@ function execute(db) {
             whatsapp TEXT,
             bio TEXT
         );
+
+        CREATE TABLE IF NOT EXISTS classes (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            subject INTEGER,
+            cost TEXT,
+            proffy_id INTEGER
+        );
     `)
 }
 
