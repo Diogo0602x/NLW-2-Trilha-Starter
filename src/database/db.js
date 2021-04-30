@@ -1,6 +1,16 @@
 const Database = require('sqlite-async')
-Database.open(__dirname + '/database.sqlite').then(execute)
 
 function execute(db) {
-  console.log('cheguei aqui')
+    // criar as tabelas do banco de dados.
+    return db.exec(`
+        CREATE TABLE IF NOT EXISTS proffys (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT,
+            avatar TEXT,
+            whatsapp TEXT,
+            bio TEXT
+        );
+    `)
 }
+
+module.exports = Database.open(__dirname + '/database.sqlite').then(execute)
