@@ -1,7 +1,6 @@
 const Database = require('./db')
 const createProffy = require('./createProffy')
 
-
 Database.then(async (db) => {
   // Inserir dados
   proffyValue = {
@@ -62,5 +61,5 @@ Database.then(async (db) => {
   `)
 
   // console.log(selectClassesSchedules)
-  
+
 })
